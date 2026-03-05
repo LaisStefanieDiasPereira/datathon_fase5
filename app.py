@@ -3,9 +3,7 @@ import joblib
 import numpy as np
 import pandas as pd
 
-# ---------------------------------------------------
 # CONFIGURAÇÃO DA PÁGINA
-# ---------------------------------------------------
 
 st.set_page_config(
     page_title="Predição de Risco de Defasagem",
@@ -13,15 +11,11 @@ st.set_page_config(
     layout="centered"
 )
 
-# ---------------------------------------------------
 # CARREGAR MODELO
-# ---------------------------------------------------
 
 model = joblib.load("models/modelo_risco_defasagem_mlp.joblib")
 
-# ---------------------------------------------------
 # TÍTULO
-# ---------------------------------------------------
 
 st.title("📚 Predição de Risco de Defasagem Educacional")
 
@@ -36,29 +30,25 @@ Insira os indicadores educacionais do aluno para obter a estimativa de risco.
 
 st.divider()
 
-# ---------------------------------------------------
 # INPUT DOS INDICADORES
-# ---------------------------------------------------
 
 st.subheader("Indicadores do Aluno")
 
 col1, col2 = st.columns(2)
 
 with col1:
-    IDA = st.slider("IDA — Desempenho Acadêmico", 0.0, 10.0, 6.0)
-    IEG = st.slider("IEG — Engajamento", 0.0, 10.0, 6.0)
-    IPS = st.slider("IPS — Psicossocial", 0.0, 10.0, 6.0)
+    IDA = st.slider("IDA - Desempenho Acadêmico", 0.0, 10.0, 6.0)
+    IEG = st.slider("IEG - Engajamento", 0.0, 10.0, 6.0)
+    IPS = st.slider("IPS - Psicossocial", 0.0, 10.0, 6.0)
 
 with col2:
-    IPP = st.slider("IPP — Psicopedagógico", 0.0, 10.0, 6.0)
-    IAA = st.slider("IAA — Autoavaliação", 0.0, 10.0, 6.0)
-    IPV = st.slider("IPV — Ponto de Virada", 0.0, 10.0, 6.0)
+    IPP = st.slider("IPP - Psicopedagógico", 0.0, 10.0, 6.0)
+    IAA = st.slider("IAA - Autoavaliação", 0.0, 10.0, 6.0)
+    IPV = st.slider("IPV - Ponto de Virada", 0.0, 10.0, 6.0)
 
 st.divider()
 
-# ---------------------------------------------------
 # PREDIÇÃO
-# ---------------------------------------------------
 
 if st.button("🔎 Calcular Probabilidade de Risco"):
 
@@ -75,18 +65,16 @@ if st.button("🔎 Calcular Probabilidade de Risco"):
 
     st.progress(float(prob))
 
-    # ---------------------------------------------------
     # CLASSIFICAÇÃO
-    # ---------------------------------------------------
 
     if prob < 0.30:
         st.success("🟢 Baixo risco de defasagem")
 
     elif prob < 0.60:
-        st.warning("🟡 Risco moderado — recomenda-se acompanhamento")
+        st.warning("🟡 Risco moderado - recomenda-se acompanhamento")
 
     else:
-        st.error("🔴 Alto risco de defasagem — intervenção recomendada")
+        st.error("🔴 Alto risco de defasagem - intervenção recomendada")
 
     st.divider()
 
