@@ -131,7 +131,7 @@ O modelo treinado é salvo e utilizado pela aplicação Streamlit.
 ------------------------------------------------------------------------
 
 ## Estrutura do Projeto
-'''
+```
   ├── data/
   │ └── raw/
   │ └── BASE_DE_DADOS_PEDE_2024_DATATHON.xlsx
@@ -153,7 +153,7 @@ O modelo treinado é salvo e utilizado pela aplicação Streamlit.
   │
   ├── app.py
   ├── requirements.txt
-  └── README.md '''
+  └── README.md ```
 
 ------------------------------------------------------------------------
 
