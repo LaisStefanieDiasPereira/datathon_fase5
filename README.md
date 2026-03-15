@@ -153,7 +153,8 @@ O modelo treinado é salvo e utilizado pela aplicação Streamlit.
   │
   ├── app.py
   ├── requirements.txt
-  └── README.md ```
+  └── README.md
+```
 
 ------------------------------------------------------------------------
 
