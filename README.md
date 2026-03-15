@@ -117,13 +117,13 @@ Configuração do modelo:
 
 Pipeline de modelagem:
 
-1.  Limpeza e tratamento dos dados\
-2.  Feature engineering\
-3.  Criação da variável target de risco\
-4.  Separação dos dados em treino e teste\
-5.  Padronização com StandardScaler\
-6.  Treinamento do modelo\
-7.  Avaliação com métricas de classificação\
+1.  Limpeza e tratamento dos dados
+2.  Feature engineering
+3.  Criação da variável target de risco
+4.  Separação dos dados em treino e teste
+5.  Padronização com StandardScaler
+6.  Treinamento do modelo
+7.  Avaliação com métricas de classificação
 8.  Geração de probabilidades de risco
 
 O modelo treinado é salvo e utilizado pela aplicação Streamlit.
