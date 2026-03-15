@@ -149,7 +149,7 @@ O modelo treinado é salvo e utilizado pela aplicação Streamlit.
   │ └── apresentação.pptx
   │
   ├── video/
-  │ └── link_da_apresntação_gravada.txt
+  │ └── link_da_apresentação_gravada.txt
   │
   ├── app.py
   ├── requirements.txt
