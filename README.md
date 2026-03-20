@@ -131,36 +131,7 @@ O modelo treinado é salvo e utilizado pela aplicação Streamlit.
 ------------------------------------------------------------------------
 
 ## Estrutura do Projeto
-<<<<<<< HEAD
 
-```
-datathon_fase5/
-│
-├── data/
-│   └── raw/
-│       └── BASE_DE_DADOS_PEDE_2024_DATATHON.xlsx
-│
-├── docs/
-│   └── documento_complementar/
-│       └── Dicionário Dados Datathon.pdf
-│
-├── models/
-│   └── modelo_risco_defasagem_mlp.joblib
-│
-├── notebooks/
-│   └── analise_risco_defasagem.ipynb
-│
-├── presentation/
-│   └── apresentacao.pptx
-│
-├── video/
-│   └── link_da_apresentacao_gravada.txt
-│
-├── app.py
-├── requirements.txt
-└── README.md
-```
-=======
 ```
   ├── data/
   │ └── raw/
@@ -185,8 +156,6 @@ datathon_fase5/
   ├── requirements.txt
   └── README.md
 ```
-
->>>>>>> 67bb71f59c258d64cb460721d2d22b69afc416fe
 ------------------------------------------------------------------------
 
 ## Resultados
