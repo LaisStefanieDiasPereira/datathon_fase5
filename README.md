@@ -178,8 +178,8 @@ datathon_fase5/
   ├── presentation/
   │ └── apresentação.pptx
   │
-  ├── video/
-  │ └── link_da_apresentação_gravada.txt
+  ├── useful_links/
+  │ └── links_uteis.txt
   │
   ├── app.py
   ├── requirements.txt
